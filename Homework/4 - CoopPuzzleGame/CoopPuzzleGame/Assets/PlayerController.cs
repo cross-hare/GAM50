@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     public KeyCode leftInput = KeyCode.LeftArrow;
     public KeyCode rightInput = KeyCode.RightArrow;
 
+    public GameObject frontFeeler = null;
+    public GameObject backFeeler = null;
+    public GameObject leftFeeler = null;
+    public GameObject rightFeeler = null;
 
     // Start is called before the first frame update
     void Start()
@@ -23,19 +27,31 @@ public class PlayerController : MonoBehaviour
         //movement
         if (Input.GetKeyDown (upInput))
         {
-            transform.Translate(Vector3.forward);
+            if (frontFeeler.GetComponent<Feeler>().isValid == true)
+            {
+                transform.Translate(Vector3.forward);
+            }
         }
         if (Input.GetKeyDown(downInput))
         {
-            transform.Translate(Vector3.back);
+            if (backFeeler.GetComponent<Feeler>().isValid == true)
+            {
+                transform.Translate(Vector3.back);
+            }
         }
         if (Input.GetKeyDown(leftInput))
         {
-            transform.Translate(Vector3.left);
+            if (leftFeeler.GetComponent<Feeler>().isValid == true)
+            {
+                transform.Translate(Vector3.left);
+            }
         }
         if (Input.GetKeyDown(rightInput))
         {
-            transform.Translate(Vector3.right);
+            if (rightFeeler.GetComponent<Feeler>().isValid == true)
+            {
+                transform.Translate(Vector3.right);
+            }
         }
     }
 }
