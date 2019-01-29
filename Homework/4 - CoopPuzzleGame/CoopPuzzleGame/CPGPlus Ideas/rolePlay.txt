@@ -1,0 +1,25 @@
+[Plus Game Instructions]
+- Add 2 new types of blocks
+- Victory condition
+[Theme]
+- Player 1 is a thief and Player 2 is a paladin. They have to work together with their different strengths in order to get through the dungeon
+and obtain treasure
+[Special Blocks]
+- Magic Block - Booby trapped so players get stuck when they go over it. Each magic block has it's own spellbook that contains a spell that can
+allow players to get through it
+- Gates - Have to be opened by a lock pick or key
+- Vents/Crevaces - Can only be crawled through by Thief
+- Weak Wall - Can be smashed 
+- Guards - block the way when certain blocks are triggered
+[Paladin]
+- Can smash through objects
+- Can imbue Thief with holy spells from spell books that allow them to go through magic blocks 
+- Armor is heavy and alerts guards when walking on certain surfaces
+[Thief]
+- Can use lock picks to open gates
+- Can crawl through vents and crevaces
+- Uses stealth to sneak past guards
+[Boss]
+- Dragon that can cast magic spells on blocks, blocks passage ways, breathes lava, maybe more idk?
+[Victory Condition]
+- Get past the dragon, steal the treasure

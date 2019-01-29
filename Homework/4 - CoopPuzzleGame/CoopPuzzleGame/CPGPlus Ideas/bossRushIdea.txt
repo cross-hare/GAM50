@@ -1,0 +1,21 @@
+[Plus Game Instructions]
+- Add 2 new types of blocks
+- Victory condition
+[Theme]
+- Player 1 is on a quest to resurrect Player 2. Player 2 is only physical in the spirit blocks, a separate island of blocks from Player 1. However,
+Player 2 has access to a bunch of triggers that would help Player 1
+[Blocks]
+- Spike Blocks - Kill on contact 
+- Ice Blocks - Slip, move a square up
+- Teleporters - Teleport 
+- Catapault - Launch player (or things)
+- Weapon Blocks - Give Weapons
+[Game Mechanics]
+- Player Health
+- Lose condition
+- Enemies
+- Time limit
+- "Feelers" turn into weapons/tools that eliminate obstacles
+[Obstacle Ideas]
+- Bosses:
+    > 
