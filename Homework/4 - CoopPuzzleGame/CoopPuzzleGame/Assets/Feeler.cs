@@ -1,4 +1,4 @@
-﻿//determines if feeler is on a valid tilespace
+﻿//determines if feeler is on a valid tilespace for the Thief class
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

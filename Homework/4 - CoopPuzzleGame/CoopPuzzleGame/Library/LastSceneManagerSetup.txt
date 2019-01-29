@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/CoopPuzzleGamePlus.unity
+- path: Assets/Scenes/CoopPuzzleGamePlus.unity
   isLoaded: 1
   isActive: 1
