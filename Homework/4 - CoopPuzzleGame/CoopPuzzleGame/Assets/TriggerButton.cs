@@ -22,7 +22,7 @@ public class TriggerButton : MonoBehaviour
     //When player walks on button
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "PPlayer" || other.gameObject.tag == "TPlayer")
         {
             toggledGridSpace.SetActive(true);
         }
@@ -31,7 +31,7 @@ public class TriggerButton : MonoBehaviour
     //When player leaves button
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "PPlayer" || other.gameObject.tag == "TPlayer")
         {
             toggledGridSpace.SetActive(false);
         }
