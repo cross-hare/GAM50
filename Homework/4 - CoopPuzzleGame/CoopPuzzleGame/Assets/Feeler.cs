@@ -22,7 +22,15 @@ public class Feeler : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Obstacle")
+        if (other.gameObject.tag == "Guard")
+        {
+            isObstacle = true;
+            isValid = false;
+            gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+            print("Stopped by a guard!");
+        }
+        else if (other.gameObject.tag == "Obstacle")
         {
             isObstacle = true;
             gameObject.GetComponent<Renderer>().enabled = true;
@@ -39,7 +47,14 @@ public class Feeler : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Obstacle")
+        if (other.gameObject.tag == "Guard")
+        {
+            isObstacle = false;
+            isValid = true;
+            gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+        }
+        else if (other.gameObject.tag == "Obstacle")
         {
             isObstacle = false;
             gameObject.GetComponent<Renderer>().enabled = true;
