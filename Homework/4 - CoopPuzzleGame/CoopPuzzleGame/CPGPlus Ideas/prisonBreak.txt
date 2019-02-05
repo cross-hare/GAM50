@@ -1,0 +1,9 @@
+[Plus Game Instructions]
+- Add 2 new types of blocks
+- Victory condition
+[Theme]
+- Player 1 is trying to break Player 2 out of prison. 
+[Special Blocks]
+- Gate Block (Need key to access)
+- Alarm Block (If tripped players need to find the reset block, otherwise Game Over)
+ 

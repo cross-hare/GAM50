@@ -6,6 +6,7 @@ using UnityEngine;
 public class Feeler : MonoBehaviour
 {
     public bool isValid = false;
+    public bool isObstacle = false;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,14 @@ public class Feeler : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "GridSpace")
+        if (other.gameObject.tag == "Obstacle")
+        {
+            isObstacle = true;
+            gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+            print("Hit a wall!");
+        }
+        else if (other.gameObject.tag == "GridSpace" && isObstacle == false)
         {
             isValid = true;
             gameObject.GetComponent<Renderer>().enabled = true;
@@ -31,7 +39,13 @@ public class Feeler : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "GridSpace")
+        if (other.gameObject.tag == "Obstacle")
+        {
+            isObstacle = false;
+            gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+        }
+        else if (other.gameObject.tag == "GridSpace")
         {
             isValid = false;
             gameObject.GetComponent<Renderer>().enabled = false;

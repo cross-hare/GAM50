@@ -1,0 +1,6 @@
+[Plus Game Instructions]
+- Add 2 new types of blocks
+- Victory condition
+[Theme]
+- Both players are on the same landscape and are in a wilderness setting. The idea is that they can trigger blocks that give them resources to 
+build tools that can break down obstacles

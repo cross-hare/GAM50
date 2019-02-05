@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &6805584264434690195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4303282413984663820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0672c3034b85649b792c3123e8f03d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggledGridSpace: {fileID: 0}
 --- !u!1001 &5484981779051379712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10,7 +23,7 @@ PrefabInstance:
     - target: {fileID: 8621795485350704396, guid: e449ae5632b791c40b01edd5e5ba825e,
         type: 3}
       propertyPath: m_Name
-      value: GridSpace (54)
+      value: StealthSpot
       objectReference: {fileID: 0}
     - target: {fileID: 5061046466788724779, guid: e449ae5632b791c40b01edd5e5ba825e,
         type: 3}
@@ -74,3 +87,9 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 28dce142671d82c4183f3925bca02fad, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e449ae5632b791c40b01edd5e5ba825e, type: 3}
+--- !u!1 &4303282413984663820 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8621795485350704396, guid: e449ae5632b791c40b01edd5e5ba825e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5484981779051379712}
+  m_PrefabAsset: {fileID: 0}

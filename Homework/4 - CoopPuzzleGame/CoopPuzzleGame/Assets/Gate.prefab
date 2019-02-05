@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 8621795485350704396, guid: e449ae5632b791c40b01edd5e5ba825e,
         type: 3}
       propertyPath: m_Name
-      value: GridSpace (124)
+      value: Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621795485350704396, guid: e449ae5632b791c40b01edd5e5ba825e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5061046466788724779, guid: e449ae5632b791c40b01edd5e5ba825e,
         type: 3}
@@ -72,5 +77,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3a655f88df17dbf4a821cccdbf4c30ae, type: 2}
+    - target: {fileID: 1676503543903437950, guid: e449ae5632b791c40b01edd5e5ba825e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e449ae5632b791c40b01edd5e5ba825e, type: 3}
