@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab = null;
-    public GameObject[] enemySpawnPoint;
+    public GameObject[] enemySpawnPoints;
     public float spawnDelay = 3.0f;
     public float timer = 0.0f;
 
@@ -22,7 +22,8 @@ public class EnemySpawner : MonoBehaviour
 
         if (timer >= spawnDelay)
         {
-            Instantiate(enemyPrefab, transform.position, transform.rotation);
+            int randomNumber = Random.Range(0, enemySpawnPoints.Length);
+            Instantiate(enemyPrefab, enemySpawnPoints[randomNumber].transform.position, transform.rotation);
             timer = 0.0f;
         }
     }
